@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <style>
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style> -->
+</head>
+<body>
+    <main>
+        <div class="app">
+            <h1>Weather fetching website</h1>
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Enter city name">
+                <button id="search">Search</button>
+            </div>
+            <div id="loader" class="hidden">Loading...</div>
+            <div id="weatherResult"></div>
+            <div id="error" class="error"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
