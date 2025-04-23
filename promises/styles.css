@@ -21,6 +21,9 @@ body{
     text-align: center;
     /* width: 300px; */
 }
+h1{
+    margin-bottom: 1rem;
+}
 .search-box{
     display: flex;
     margin-bottom: 1rem
@@ -36,7 +39,7 @@ button{
 .hidden{
     display: none;
 }
-#errorDiv{
+#error{
     color: red;
     font-size: 1.1rem;
 }
