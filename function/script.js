@@ -24,4 +24,15 @@ const pet = function(name) {
 }
 
 const myPet = pet('dog');
-console.log(myPet()); // dog
+// console.log(myPet()); // dog
+
+// nam conflict with scope chaining
+function outsite() {
+    const x = 5;
+    function inside(x) {
+        return x * 2;
+    }
+    return inside;
+}
+
+console.log(outsite()(2)); // 4
