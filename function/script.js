@@ -35,4 +35,22 @@ function outsite() {
     return inside;
 }
 
-console.log(outsite()(2)); // 4
+// console.log(outsite()(2)); // 4
+
+// arguments
+
+function myConcat(seperator) {
+    let result = '';
+    for(let i = 1; i < arguments.length; i++) {
+        result = result + arguments[i] + seperator
+    }
+    return result;
+}
+
+// console.log(myConcat(' ', 'Hello', 'World', '!')); // Hello World !
+
+function multiply(x, y) {
+    y = typeof y !== "undefined" ? y : 1;
+    console.log(typeof x)
+    return x * y;
+}
