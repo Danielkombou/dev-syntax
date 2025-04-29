@@ -1,5 +1,7 @@
-// an array is an iterable
+import {debounce} from "./utility";
 
+
+// an array is an iterable
 // arr.push(23)
 console.log(test1)
 var test1 = "hoisted"
@@ -32,3 +34,13 @@ const myCar = {
 // console.log(myCar.make);
 // myFunc(myCar);
 // console.log(myCar.make);
+
+
+
+// const inputField = document.getElementById('search');
+
+const handleSearch = debounce((event) => {
+    console.log("Simulate searching for: ", event.target.value);
+}, 1000);
+
+document.getElementById('search').addEventListener('input', handleSearch);

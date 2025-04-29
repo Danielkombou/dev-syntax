@@ -54,3 +54,5 @@ function multiply(x, y) {
     console.log(typeof x)
     return x * y;
 }
+
+multiply(2)

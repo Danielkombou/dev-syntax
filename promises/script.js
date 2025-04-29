@@ -105,6 +105,19 @@ async function fetchWeather(city) {
         loader.classList.add('hidden');
     }
 }
+cityInput.addEventListener('input', (e) => {
+    let debounceTimer;
+    clearTimeout(debounceTimer);
+
+    const city = e.target.value.trim();
+    if (city) {
+            debounceTimer = setTimeout(() => {
+            fetchWeather(city);
+        }, 5000);
+        } else {
+            errorDiv.textContent = 'Please enter a city name.';
+        }
+})
 
 searchBtn.addEventListener('click', () => {
     const city = cityInput.value.trim();
